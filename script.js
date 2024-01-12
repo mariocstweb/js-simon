@@ -9,3 +9,8 @@ for (let i = 0; i < 5; i++) {
   console.log(numeroCasuale);
   cpuNumber.innerText += " " + numeroCasuale;
 }
+
+// Funzione per far "scomparire" i numeri dopo 5 secondi
+setTimeout(function () {
+  cpuNumber.classList.add("d-none");
+}, 5000);
